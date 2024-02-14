@@ -27,3 +27,10 @@ class DBContext:
 
     def getOne(self):
         return self._cursor.fetchone()
+
+    def createTable(
+        self, name: str, model,
+        columns: dict[str, str],
+        table_options: str
+    ):
+        return Table(self, name, model, columns, table_options)
