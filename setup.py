@@ -7,6 +7,6 @@ setup(
     description='',
     author='deustenebrarum',
     author_email='gamesevolutionteam@gmail.com',
-    install_requires=['wheel', 'pysqlite3'],
+    install_requires=['wheel'],
     packages=find_packages(),
 )
